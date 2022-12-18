@@ -19,33 +19,28 @@ const Hero = () => (
           </p>
         </div>
 
-        <div className='flex flex-row justify-between item-center w-full'>
-          <h1 className='flex-1 font-poppins font-semibold ss:text-[68px] text-[40px] text-white leading-tight'>
-            The Next <br className='sm:block hidden' /> {" "}
+          <h1 className='flex-1 font-poppins font-semibold ss:text-[68px] text-[40px] leading-tight'>
+            <span className=' text-white'>The Next</span> <br className='sm:block hidden' /> {" "}
             <span className='text-gradient'>Generation</span> <br className='sm:block hidden' /> {" "}
+            <span className=' text-white'>Payment Method.</span>
+                      
+            <p className={`${styles.paragraph} max-w-[580px] mt-5`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus blanditiis cum quasi hic qui dolorem,
+              necessitatibus dolorum atque quibusdam consequatur enim...
+            </p>
+            <div className=' text-dimBlack ss:flex hidden font-normal'>
+              <GetStarted />
+            </div>
           </h1>
 
-          <div className='ss:flex hidden md:mr-4 mr-0'>
-            <GetStarted />
-          </div>
-        </div>
-
-        <h1 className='w-full font-poppins font-semibold ss:text-[60px] text-[40px] text-white leading-tight'>
-          Payment Method.
-        </h1>
-
-        <p className={`${styles.paragraph} max-w-[480px] mt-5`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus blanditiis cum quasi hic qui dolorem,
-          necessitatibus dolorum atque quibusdam consequatur enim..
-        </p>
       </div>
 
       {/* right side */}
-      <div>
+      <div className='flex flex-1'>
         <img src={robot} alt='robot' className='w-[90%] h-[90%] relative z-[5] md:mt-[0] mt-6' />
         <div className='absolute top-10 z-[0] w-[40%] h-[35%] pink__gradient'></div>
       </div>
 
-      <div className={`ss:hidden ${styles.flexCenter} mt-6`}>
+      <div className={`ss:hidden font-poppins leading-tight ${styles.flexCenter} mt-6`}>
         <GetStarted />
       </div>
     </section>
